@@ -15,10 +15,13 @@
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<!-- <link rel="stylesheet" type="text/css" href="styles/flexboxgrid.css"> -->
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { width:100%; height: 500px;}
+    </style>
 
-        <style>
-
-		</style>
     </head>
     
     <body>
@@ -75,7 +78,7 @@
 					</address>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-md-pull-6">
-					<img src="http://placehold.it/150x150" class="img-responsive logo-art">
+					<div id='map'></div>
 				</div>
 			</div>
 		</div>
@@ -83,6 +86,16 @@
 	 
 
 
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmdpbGJlcnQiLCJhIjoiY2lsdmJra2d6MDFrcXU5a3JlbDdtbGVmciJ9.3NagRPKZIRnPFwcKt-sIew';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+    center: [-74.50, 40], // starting position
+    zoom: 9, // starting zoom
+    scrollZoom: false
+});
+</script>
 
 
 

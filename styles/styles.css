@@ -21,7 +21,7 @@
     }*/
 
 
-
+   
 
         div.container {
         	border: 1px solid;
@@ -68,6 +68,8 @@
 
         }
 
+
+
         ul.flex-nav li {
         	border: 1px solid;
         	display: inline-block;
@@ -84,9 +86,13 @@
               /*  height: 70vh;*/
         }
 
+        .bottom {
+            min-height: 600px;
+        }
 
-    @media only screen and (min-width : 480px) {
+
+  /*  @media only screen and (min-width : 480px) {
         .bottom {
                 min-height: 500px;
         }
-    }
+    }*/
