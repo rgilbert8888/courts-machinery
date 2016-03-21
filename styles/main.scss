@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#header-container {  
+    // position: fixed;
+    // z-index: 600;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // background: #222;
+    // color: white;
+    // text-align: center;
+}
+
+#wrap {
+    // margin: 220px 5% 100px 5%;
+    // max-width: 1400px;
+
+    // @media only screen and (min-width : 768px) {
+    //     margin: 260px 5% 100px 5%;
+    // }    
+
+    // @media only screen and (min-width : 992px) {
+    //     margin: 300px 5% 100px 5%;
+    // }
+
+    // @media only screen and (min-width : 1200px) {
+    //     margin: 350px 5% 100px 5%;
+    // }
+
+
+}
+
+// h1 {
+//     display: inline-block;
+//     line-height: 110px;
+//     margin: 0;
+//     padding: 0; 
+// }
+
+.row {
+    border: 1px solid;
+}
+
+// c logo styles//
+.small-logo {
+    max-width: 150px;
+    // margin: 0 auto;
+    display: inline-block;
+
+}
+
+.big-logo {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+.nav-middle {
+    background-color: #ccc;
+}
+
+.flex-nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.flex-nav-inner {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    height: 60px;
+    margin-bottom: 0;
+    width: 100%;
+
+
+    li {
+        a {
+            line-height: 60px;
+            display: inline-block; 
+        }
+
+        flex-basis: 33.33%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    @media only screen and (min-width : 320px) {
+        
+    }
+
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    @media only screen and (min-width : 1200px) {
+
+    }*/
+// @mixin flexible-top($navHeight) {
+//     min-height: (100vh - $navHeight);
+// }
+
+// // @include flexible-top(yourElementHeight); 
+   
+
+//         div.container {
+//         	border: 1px solid;
+
+//         }
+
+//         div.page-container {
+        	
+//         	display: flex;
+//         	flex-direction: column;
+//         	border: 1px solid;
+//         }
+
+//         .flex-container-nav {
+//         	display: flex;
+//         	border: 1px solid red;
+//         	flex-wrap: nowrap;
+//         }
+
+//         .flex-container-col {
+//         	display: flex;
+//         	border: 1px solid red;
+//         	/*flex-wrap: nowrap;*/
+//         	flex-direction: column;
+//         }
+        
+//         .flex-container-row {
+//         	display: flex;
+//         	border: 1px solid red;
+//         	flex-direction: row;
+//         	align-items: center;
+//         }
+
+//         ul.flex-nav {
+//         	padding: 0;
+//         	margin: 0;
+//         	display: flex;
+//         	flex-direction: row;
+//         	list-style-type: none;
+//         	flex-wrap: nowrap;
+//         	justify-content: space-around;
+//         	align-content: stretch;
+//             width: 100%;
+
+//         }
+
+
+
+//         ul.flex-nav li {
+//         	border: 1px solid;
+//         	display: inline-block;
+//         }
+
+//         .logo-art {
+//         	width: 100%;
+//                 max-width: 375px;
+//                 margin: 0 auto;
+//         }
+
+//         .page1 {
+//         	background-color: #eee;
+//             margin-top: 125px;
+//         }
+
+
+
+//         .page-container{
+//             // min-height: 600px;
+//             // @include flexible-top(25vh); 
+//             // height: calc(100vh - 125px);
+//             height: 100vh;
+
+//         }
+
+//         .page1 .bottom {
+//             margin-top: 125px;
+//         }
+
+//     .fixed-items {
+
+//       position:fixed;
+//       top:0px;
+//       left:0px;
+//       height:125px;
+//       width:100%;
+//       z-index: 1000;
+//       background-color: pink;
+
+//     }
+
+  /*  @media only screen and (min-width : 480px) {
+        .bottom {
+                min-height: 500px;
+        }
+    }*/
