@@ -14,52 +14,165 @@ border-right: 20px solid rgba(255,255,255,.4);*/
         position: absolute;
         top: 35%;
     }*/ 
-// font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+/*// font-family: "proxima-nova", Arial, Helvetica, sans-serif;
 // 
-
-
-
-
+*/
+/*IE GLOW*/
+/*filter:progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
+*/
 body {
-
-    // font-family: 'PT Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    
+    font-family: 'PT Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*text-shadow: 0 1px 1px rgba(0,0,0,.2);*/
     margin:0; 
     padding:0; 
     background-color: rgb(41,41,41); 
-    color:#FEFEFA; 
+    color:#F7F5F3; 
+}
+
+p {
+    font-family: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+ a, a:hover {
+    text-decoration: none;
+    color: initial;
+ }
+
+
+.btn-custom {
+    color: #fff;
+    /*background-color: rgb(67,67,67);*/
+/*    border-color: #2e6da4;*/
+    display: inline-block;
+    padding: 3px 7px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-bottom: 2px solid #F7F5F3;
+        transition: all ease-in-out .1s;
+    -webkit-transition: all ease-in-out .1s;
+
+
+
+    a, i {
+        display: table-cell;
+        color:#F7F5F3;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        -moz-text-shadow: 0 0 6px #fff;
+        -webkit-text-shadow: 0 0 6px #fff;
+        text-shadow: 0px 0px 6px #fff;
+        color: #F7F5F3;
+    }
+
+
+    @media screen and (min-width : 768 px){
+        display: table;
+    }
+}
+
+
+.btn-cta {
+    display: inline-block;
+    background-color:transparent;
+    color: #F7F5F3; 
+    border: 2px solid #F7F5F3;
+    border-radius: 0px;
+    font-size: 1.2em;
+    padding: 10px 15px;
+                transition: all ease-in .3s;
+            -webkit-transition: all ease-in .3s;
+
+    &:hover { 
+        -moz-box-shadow: 0 0 6px #fff;
+        -webkit-box-shadow: 0 0 6px #fff;
+        box-shadow: 0px 0px 6px #fff;
+        -moz-text-shadow: 0 0 6px #fff;
+        -webkit-text-shadow: 0 0 6px #fff;
+        text-shadow: 0px 0px 6px #fff;
+        color: #F7F5F3;
+    }
+
 }
 
 
 
 
+/* ==== CONTAINERS ==== */
 
-/* ==== GLOBAL ==== */
 .container-top {
     padding-top: 2%;
+    text-align: center;
 }
 
-.row {
-    /*border: 1px solid;*/
-}
+.new-color-grey {
+    text-align: center;
+    background-color: #999897;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+");
 
+}
 
 .new-color{
-    background: #FEFEFA;
+    background: #F7F5F3;
+    /*background: #FEFEFA;*/
     color:rgb(41,41,41);  
     padding-bottom: 5%;
 }
 
+.container-top::after
+/*, .new-color-grey::after*/
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid rgb(41,41,41); 
+    clear: both;
+    z-index: 1000;
+    left: 47%; /* older browsers */
+    left: calc(50% - 30px);
+}
+
+/*new-color-grey::after { 
+    border-top: 25px solid;
+    border-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+");; 
+}*/
+
+
 
 /* ==== LOGO, PHONE, MEDIA ICONS ==== */
+
 .header {
     margin-bottom: 3.5%;
 }
 
 .middle {
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
-        font-variant: small-caps;
+    font-variant: small-caps;
+    color: #fff;
 
     p.lead {
         font-family: 'Open Sans', sans-serif;
@@ -68,6 +181,7 @@ body {
     .c-logo img {
         max-width: 160px;
     }
+
 }
 
 ul.social-media {
@@ -83,12 +197,8 @@ ul.social-media {
     text-align: left;
     
     li {
-        padding-bottom: 5px;
-
-        i {
-            font-size: 2.6em;
-            color: #FEFEFA;
-        }
+        margin-bottom: 5px;
+        width: 25px;
     }
 
 
@@ -99,23 +209,18 @@ ul.social-media {
 
 
 div.phone-info {
-
+    font-family: 'Libre Baskerville', serif;
     margin: 0; 
     text-align:right;
 
-    a, i {
-        color: #FEFEFA;
-    }
-
-    @media only screen and (min-width : 830px) and (max-width : 991px) {
+    @media only screen and (min-width : 830px) {
         margin-right: -15px;
     }
    
 }
+
+
 /*=== CAROUFREDSEL STYLES ====*/ 
-    .slider {
-        margin-bottom: 3.5%;
-    }
 
     .list_carousel  {
         background-color: #ccc;
@@ -125,7 +230,7 @@ div.phone-info {
         display: block;
     }
 
-    // INDIVIDUAL SLIDES - div.s-item //
+    /*   // INDIVIDUAL SLIDES - div.s-item //*/
 
     .list_carousel .s-item {
         font-size: 40px;
@@ -137,6 +242,7 @@ div.phone-info {
         background-color: transparent;
         display: block;
         overflow: hidden;
+        border: 5px solid rgb(41,41,41);
 
         .text-overlay {
 
@@ -147,11 +253,11 @@ div.phone-info {
             position: absolute;
             color: white;
             z-index: 40;
-            padding-top: 15%;   // moves the text down from the top
-            text-align: center;  // center the text
+            padding-top: 15%;   /*// moves the text down from the top*/
+            text-align: center;  /*// center the text*/
 
-            // transition: all ease-in .4s;
-            // -webkit-transition: all ease-in .4s;
+/*            // transition: all ease-in .4s;
+            // -webkit-transition: all ease-in .4s;*/
 
             h3 {
                 cursor: auto;
@@ -179,6 +285,7 @@ div.phone-info {
 
                 h3 { 
                     color: #FFF !important;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.2);
                 }
 
                 .underline {
@@ -192,7 +299,7 @@ div.phone-info {
 
         .slide-text {
             top: 0;
-            // margin-top: 1px;
+/*            // margin-top: 1px;*/
             border: none;
             display: block;
             float: left;
@@ -204,7 +311,7 @@ div.phone-info {
             text-align: center;
             margin: 0 0 10px;
             position: absolute;
-            // top: 100%;
+            /*// top: 100%;*/
             transition: all ease-in .3s;
             -webkit-transition: all ease-in .3s;
             width: 100%;
@@ -218,6 +325,12 @@ div.phone-info {
         &:hover .slide-text {
             // top: 0;
             background: rgba(0,0,0,0.5);
+        }
+
+        img {
+            width: 150%;
+            height: auto;
+            border: 0;
         }
 
     }
@@ -247,8 +360,6 @@ div.phone-info {
         border-bottom: 3px solid hsla(0, 0%, 100%, 0.5);
     }
 
-
-
     .prev {
         left: 10px;
 
@@ -277,92 +388,25 @@ div.phone-info {
         }
     }
 
-
-
-      /*  border-bottom: 20px solid transparent;
-        border-top: 20px solid transparent;
-        border-left: 20px solid #fff;
-        font-size: 0;
-        line-height: 0;
-        position: absolute;
-        top: 50%;
-        z-index: 100000;*/
-
-    /* === IMAGES ==== */
-    
-    .s-item {
-        position: relative;
-        border: none;
-        background-color: transparent;
-        display: block;
-        overflow: hidden;
-        border: 5px solid rgb(41,41,41);
-    }
-
-    .s-item img {
-        width: 150%;
-        height: auto;
-        border: 0;
-    }
-
-  /*  .sc-item .overlay {
-        position: absolute;
-     
-        height: 100%;
-        width: 100%;
-    }
-
-    .sc-item .bar {
-        width: 30%;
-        border: solid 1px #fff;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .sc-item:hover .sc-content {
-        top: 0;
-    }*/
-
-
-/*=== ABOUT US ===== */
-
-div.about-us {
-    text-align: center;
-    position: relative;
-
-    .btn-primary {
-        margin-bottom: 40px;
-    }
-
-}
-
-
-.container-top::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid rgb(41,41,41); 
-    clear: both;
-    z-index: 1000;
-    left: 47%; /* older browsers */
-    left: calc(50% - 30px);
-}
+/*=== ABOUT US ====*/
 
 
 
 /*==== CONTACT US ===== */
 div.contact-us {
-    margin-top: 5%;
-    
+
     .address-side {
         text-align: center;
     }
 
-    #map { width:100%; height: 500px;}
+    #map { 
+        width:100%; 
+        height: 500px;
+    }
 }
+
+
+
 
 
 
@@ -391,43 +435,19 @@ div.contact-us {
 
 
   /*  @media only screen and (min-width : 480px) {
-        .bottom {
-                min-height: 500px;
-        }
+
     }*/
-/*.nav-middle {
-    background-color: #ccc;
-}*/
-
-/*.flex-nav-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: nowrap;
-}
-
-.flex-nav-inner {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: stretch;
-    height: 60px;
-    margin-bottom: 0;
-    width: 100%;
 
 
-    li {
-        a {
-            line-height: 60px;
-            display: inline-block; 
-        }
 
-        flex-basis: 33.33%;
-        text-align: center;
-    }
-}
-*/
+      /*  border-bottom: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-left: 20px solid #fff;
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        z-index: 100000;*/
+
 
 

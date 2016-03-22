@@ -20,18 +20,15 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
     <style>
 		
-		.header-center * {
-			margin: 0 auto;
-/*			text-align: center;*/
-		}
-
 		.header {
 			margin-bottom: 3.5%;
 		}
 
-		.col {
-			/*border: 1px solid;*/
+		 .cta, .about-us, .contact-us {
+			padding-top: 10%;
+			padding-bottom: 10%;
 		}
+
 
 
 
@@ -41,26 +38,25 @@
     
     <body>
 
-		<!-- 	<div class="container-holder"> -->
-
+	
 	    <div class="container container-top">
 			
 			<div class="row header">
-				<div class="col-xs-3 col-lg-2 col">
+				<div class="col-xs-3 col-lg-2 text-left">
 					<ul class="social-media" style="">
-						<li class="media-icon"><i class="fa fa-twitter-square fa-2x"></i></li>
-						<li class="media-icon"><i class="fa fa-facebook-square fa-2x"></i></li>
-						<li class="media-icon"><i class="fa fa-youtube-square fa-2x"></i></li>
-						<li class="media-icon"><i class="fa fa-linkedin-square fa-2x"></i></li>
+						<li class="media-icon btn-custom"><i class="fa fa-twitter"></i></li>
+						<li class="media-icon btn-custom"><i class="fa fa-facebook"></i></li>
+						<li class="media-icon btn-custom"><i class="fa fa-youtube"></i></li>
+						<li class="media-icon btn-custom"><i class="fa fa-linkedin"></i></li>
 					</ul>
 				</div>
 				<div class="col-xs-6 col-lg-8 middle">
 					<div class="c-logo"><img src="images/courts-white.png"></div>
 					<h1 class="page-heading">Courts Machinery</h1>
-					<p class="lead">Assisting Equipment Needs from Light Towers to 500-ton Cranes Since 1981.</p>
+					<p class="lead">Supplying Quality New &amp; Used Construction Equipment Since 1981</p>
 				</div>
-				<div class="col-xs-3 col-lg-2 col">
-					<div class="phone-info"><i class="fa fa-phone fa-2x"></i><a href="callto:01234567890" class="hidden-xs">&nbsp; 01234 567 890</a></div>
+				<div class="col-xs-3 col-lg-2 text-right">
+					<div class="phone-info btn-custom"><i class="fa fa-phone visible-xs"></i><a href="callto:15076782752" class="hidden-xs">Call: 1-507-678-2752</a></div>
 				</div>
 			</div>	
 
@@ -155,53 +151,70 @@
 							</div>
 						</a>
 					</div>			
-	<!-- ADD MORE SLIDES HERE IF NEEDED -->
+				<!-- ADD MORE SLIDES HERE IF NEEDED -->
 				</div>
-				<!-- <div class="clearfix"></div> -->
-				<div class="arrow">
+			<!-- <div class="clearfix"></div> -->
+
+		<!-- SLIDER CONTROLS -->
+				<!-- <div class="arrow">
 					<a id="prev2" class="prev">&nbsp;</a>
 				</div>
 				
 				<div class="arrow">
 					<a id="next2" class="next">&nbsp;</a>
-				</div>
+				</div> -->
 			</div>
 
+			<div class="row cta">
+				<a class="btn btn-cta" href="#" role="button">View Our Used Equipment</a>
+			</div>
+		</div>
 
 	<!-- About us row -->
-
+	<div class="new-color-grey">
+		<div class="container">
+			
 			<div class="row about-us">
 				<div class="col-md-12 ">
-					<h3>About Us</h3>
-					<p>html5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a class="btn btn-primary" href="#" role="button">All Used Equipment</a>
+					<h2>About Us</h2>
+					<p class="lead">The History of Courts Machinery</p>
+					<p>Courts Machinery Company was started in March 1981 by Dick Courts who worked for two major equipment dealers in Minneapolis, MN and Sioux Falls, SD for 10 years before starting his own company. He had some good customers who told him they would like to have someone that could go to auctions dealer yards to inspect and buy equipment for them that they could trust. Dick looked into this and started Courts Machinery at that time.  Since then, they've traveled worldwide looking at and buying construction equipment, making many good friends and customers in the business along the way.</p>
+
+					<blockquote>"We try to be fair and will not buy anything for our customers that we would not want to own ourselves."</blockquote>
+
+<p>They maintain a small inventory in a Windom, Minnesota yard to rent and sell from, yet they'll purchase equipment from various sources and will rent, lease or sell anywhere.</p>
+
+<p>When he's out of town at auctions or looking for equipment, look for Barb and Brandon, his wife and son, to be the ones helping out with the company.  </p>
 				</div>			
 			</div>
+		
 		</div>
+	</div>
 
-		<div class="new-color">
-			<div class="container">
-		<!-- Map and contact row -->
 
-				<div class="row contact-us">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 address-side">
-						<h3>Contact Us</h3>
-						<address>
-							PO Box 183<br>
-							Windom, MN 56101<br>
+	<div class="new-color">
+		<div class="container">
+	<!-- Map and contact row -->
 
-							PHONE: 507-678-2752<br>
-							FAX: 507-678-2502<br>
-							EMAIL: courtsmc@frontiernet.net
-						</address>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6 map-side">
-						<div id='map'></div>
-					</div>
+			<div class="row contact-us">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 address-side">
+					<h2>Contact Courts</h2>
+					<address>
+						PO Box 183<br>
+						Windom, MN 56101<br>
+
+						PHONE: 507-678-2752<br>
+						FAX: 507-678-2502<br>
+						EMAIL: courtsmc@frontiernet.net
+					</address>
 				</div>
-			
+				<div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6 map-side">
+					<div id='map'></div>
+				</div>
 			</div>
+		
 		</div>
+	</div>
 	 
 <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -224,7 +237,7 @@
 	$(document).ready(function() { 
 
 
-		$('.btn-primary').focus();
+		// $('.btn-primary').focus();
 
 
 	//	Scrolled by user interaction
@@ -232,13 +245,17 @@
 			auto: false,
 			responsive: true,
 			width: '100%',
-			scroll: 1,
+			scroll: {
+				pauseOnHover: true,
+				items: 1
+				// easing: 'elastic'
+			},
 			items: {
 	            width: 500,
 	            height: '100%',
 	            visible: {
 	            	// variable
-	                min: 3,
+	                min: 2,
 	                max: 6
 	            }
 	        },
