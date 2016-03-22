@@ -25,10 +25,15 @@
 /*			text-align: center;*/
 		}
 
-		.header-center {
-			width: 100%;
-			clear: both;
+		.header {
+			margin-bottom: 3.5%;
 		}
+
+		.col {
+			/*border: 1px solid;*/
+		}
+
+
 
     </style>
 
@@ -39,83 +44,126 @@
 		<!-- 	<div class="container-holder"> -->
 
 	    <div class="container container-top">
+			
 			<div class="row header">
-				
-				<div class="pull-right">
-					<p class=""><a href="callto:01234567890">01234 567 890</a></p>
-				</div>	
-				<div class="pull-left">
-					
-					<ul class="social-media">
+				<div class="col-xs-3 col-lg-2 col">
+					<ul class="social-media" style="">
 						<li class="media-icon"><i class="fa fa-twitter-square fa-2x"></i></li>
 						<li class="media-icon"><i class="fa fa-facebook-square fa-2x"></i></li>
 						<li class="media-icon"><i class="fa fa-youtube-square fa-2x"></i></li>
 						<li class="media-icon"><i class="fa fa-linkedin-square fa-2x"></i></li>
 					</ul>
 				</div>
-
-				<!-- <div class="col-xs-12 col-lg-12"> -->
-				<div class="header-center text-center">
-					<img src="images/courts-white.png" class="img-responsive c-logo">
+				<div class="col-xs-6 col-lg-8 middle">
+					<div class="c-logo"><img src="images/courts-white.png"></div>
 					<h1 class="page-heading">Courts Machinery</h1>
-					<h1 class="small">Since 1981</h1>
+					<p class="lead">Assisting Equipment Needs from Light Towers to 500-ton Cranes Since 1981.</p>
 				</div>
-				<!-- </div> -->
-
-			<!-- 				<div class="col-xs-12 col-sm-2 col-md-2 social-left">
-								<ul class="social-media">
-									<li class="media-icon"><i class="fa fa-twitter-square fa-2x"></i></li>
-									<li class="media-icon"><i class="fa fa-facebook-square fa-2x"></i></li>
-									<li class="media-icon"><i class="fa fa-youtube-square fa-2x"></i></li>
-									<li class="media-icon"><i class="fa fa-linkedin-square fa-2x"></i></li>
-
-								</ul>
-
-							</div> -->
-	
-
-		
-<!-- 				<div class="col-xs-12 col-sm-8 col-md-8">
-					<img src="images/courts-white.png" class="img-responsive c-logo">
-					<h1 class="page-heading">Courts Machinery</h1><h1 class="small">Since 1981</h1>
+				<div class="col-xs-3 col-lg-2 col">
+					<div class="phone-info"><i class="fa fa-phone fa-2x"></i><a href="callto:01234567890" class="hidden-xs">&nbsp; 01234 567 890</a></div>
 				</div>
-
-				<div class="col-xs-12 col-sm-2 col-md-2">
-					<p class=""><a href="callto:01234567890">01234 567 890</a></p>
-				</div>
- -->
 			</div>	
 
-<!-- 			<div class="row">
-				<img src="images/courts-white.png" class="img-responsive c-logo">
-				<h1 class="page-heading">Courts Machinery</h1><h1 class="small">Since 1981</h1>
-			</div>	 -->
 
 	<!-- slider gallery thing -->
 
-				<!-- 	<p>Carousel scrolled by user interaction.<br />
-					(prev-button, next-button, pagination, mousewheel and swipe)</p> -->
 			<div class="row slider">
-				<div class="carousel-holder" style="position:relative">
-					<!-- <div class="list_carousel"> -->
-						<div id="foo2" class="list_carousel">
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26880-MNSW-EX-CASE-CX130D-160D.jpg"></div>
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26881-MNSW-WL-DOOS-DL2005-DL200T5.jpg"></div>
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26877-ox-trailers-full-frame2_JPG.jpg"></div>
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-RE-IROCK-RDS15.jpg"></div>
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-TR-TAL-CAPACITY_1.jpg"></div>
-							<div class="s-item"><img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-TR-TAL-CAPACITY_2.jpg"></div>
-						</div>
-						<!-- <div class="clearfix"></div> -->
-						<div class="arrow">
-							<a id="prev2" class="prev">&nbsp;</a>
-						</div>
-						
-						<div>
-							<a id="next2" class="next">&nbsp;</a>
-						</div>
-						<!-- <div id="pager2" class="pager"></div> -->
-					<!-- </div> -->
+				<div id="foo2" class="list_carousel">
+
+				<!-- BEGIN INDIVIDUAL SLIDES -->
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26880-MNSW-EX-CASE-CX130D-160D.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 1</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>							
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-TR-TAL-CAPACITY_1.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 2</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>							
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26881-MNSW-WL-DOOS-DL2005-DL200T5.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 3</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>							
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/s3-26877-ox-trailers-full-frame2_JPG.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 4</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>							
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-RE-IROCK-RDS15.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 5</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>							
+					<div class="s-item">
+						<a href="#">
+							<img src="https://s3.amazonaws.com/editorial.ceg/1000px/MNSW-TR-TAL-CAPACITY_1.jpg">
+							
+							<div class="text-overlay">
+								<h3>Service 6</h3>
+								<div class="underline"></div>
+							</div>
+							
+							<div class="slide-text">
+								<!-- <p>foo2</p> -->
+							</div>
+						</a>
+					</div>			
+	<!-- ADD MORE SLIDES HERE IF NEEDED -->
+				</div>
+				<!-- <div class="clearfix"></div> -->
+				<div class="arrow">
+					<a id="prev2" class="prev">&nbsp;</a>
+				</div>
+				
+				<div class="arrow">
+					<a id="next2" class="next">&nbsp;</a>
 				</div>
 			</div>
 
@@ -189,7 +237,8 @@
 	            width: 500,
 	            height: '100%',
 	            visible: {
-	                min: 2,
+	            	// variable
+	                min: 3,
 	                max: 6
 	            }
 	        },
